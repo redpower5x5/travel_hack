@@ -1,0 +1,7 @@
+2024-04-05T03:18:17.843868+0300 ERROR failed to upload file HTTPConnectionPool(host='localhosts', port=50200): Max retries exceeded with url: /unsafe/rs:fit:700:700/plain/localhost:9000/images/8b9db1bb-ee29-4945-9f24-8a600ae6e018.png (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10e2a8830>: Failed to resolve 'localhosts' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-04-05T03:19:36.447468+0300 INFO shutting down
+2024-04-05T03:26:12.210986+0300 INFO shutting down
+2024-04-05T03:26:18.010008+0300 ERROR failed to upload file urlsafe_b64encode() missing 1 required positional argument: 's'
+2024-04-05T03:29:12.494529+0300 INFO shutting down
+2024-04-05T03:29:58.901577+0300 INFO shutting down
+2024-04-05T03:39:49.400000+0300 INFO shutting down

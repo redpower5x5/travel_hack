@@ -1,0 +1,12 @@
+__pycache__/
+.vscode/
+.env
+venv/
+tests/
+.idea/
+env/
+*/.DS_Store
+/storage/*
+data/
+node_modules/
+__pycache__/

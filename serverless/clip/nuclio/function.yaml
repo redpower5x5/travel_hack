@@ -1,0 +1,29 @@
+apiVersion: "nuclio.io/v1beta1"
+kind: "NuclioFunction"
+metadata:
+  name: "clip-function"
+spec:
+  description: >
+    CLIP MODEL DEPLOYMENT FAAS
+  runtime: python
+  handler: main:handler
+  minReplicas: 1
+  maxReplicas: 1
+  disableDefaultHTTPTrigger: false
+  # build:
+  #   baseImage: python:3.9-buster
+  #   commands:
+  #   - "apt-get update && apt-get install -y wget git"
+  #   - "git clone https://github.com/FreddeFrallan/Multilingual-CLIP"
+  #   - "pip install git+https://github.com/openai/CLIP.git"
+  #   - "pip install pillow"
+  #   - "bash Multilingual-CLIP/legacy_get-weights.sh"
+  triggers:
+    myHttpTrigger:
+      maxWorkers: 1
+      kind: 'http'
+      workerAvailabilityTimeoutMilliseconds: 10000
+      attributes:
+        port: 32001
+        # Set value from the calculation of tracking of 100 objects at the same time on a 4k image
+        maxRequestBodySize: 268435456 # 256MB
