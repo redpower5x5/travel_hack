@@ -215,9 +215,10 @@ def get_all_images(db: Session, on_page: int, page_num: int) -> response_schemas
             )
         total_count = len(images)
         images_list = [response_schemas.Image.model_validate(image) for image in images]
-        return response_schemas.ImageList(
+        return response_schemas.ImageListResponse(
             count=total_count,
             images=images_list,
+            has_more = True if (page_num*on_page) < total_count else False
         )
     except NoResultFound:
         return response_schemas.ImageList(

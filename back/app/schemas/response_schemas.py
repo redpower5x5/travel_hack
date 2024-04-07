@@ -39,6 +39,7 @@ class Image(BaseModel):
     @field_validator('exif', mode='before')
     def validate_exif(cls, value):
         return str(value)
+
 class ImageResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
@@ -48,12 +49,18 @@ class ImageResponse(BaseModel):
     description: str
     exif: str
     metainfo: Dict
+    has_more: bool
+
+    @field_validator('exif', mode='before')
+    def validate_exif(cls, value):
+        return str(value)
 
 class ImageListResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     count: int
-    images: List[ImageResponse]
+    images: List[Image]
+    has_more: bool
 
 class ImageList(BaseModel):
     model_config = ConfigDict(from_attributes=True)
