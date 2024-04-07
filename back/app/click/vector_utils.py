@@ -2,11 +2,12 @@ from app.config import log
 from typing import Any, List, Union
 import clickhouse_connect
 
-def cosine_compare(client: Any, input_embed: List[float], to_image: bool = True) -> List:
+def cosine_compare(client: Any, input_embed: List[float], to_image: bool = True, limit: bool = True) -> List:
     """Find similar to embed from clickhouse"""
     PARAMS = {'emebed': input_embed}
+    Limit = 'LIMIT 5'
     if to_image:
-        QUERY = f'SELECT id, cosineDistance(image_embedding, {input_embed}) AS score FROM images WHERE score >= 0.02 ORDER BY score ASC LIMIT 5'
+        QUERY = f'SELECT id, cosineDistance(image_embedding, {input_embed}) AS score FROM images WHERE score >= 0.02 ORDER BY score ASC {Limit if limit else ""}'
     else:
         QUERY = f'SELECT id, cosineDistance(text_embedding, {input_embed}) AS score FROM images WHERE score >= 0.02 ORDER BY score ASC LIMIT 5'
     result = client.query(QUERY)
