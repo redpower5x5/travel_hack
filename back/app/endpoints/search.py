@@ -179,6 +179,7 @@ async def find_similar_image(
         embed = response.json()["embed"][0]
         # find similar images via clickhouse
         click_respone = cosine_compare(click, embed, limit=False)
+        log.debug(f"click embeed output: {click_respone}")
         # get top 5 images
         click_respone = get_propper_probalities(click_respone)
         image_ids = [int(row[0]) for row in click_respone]
