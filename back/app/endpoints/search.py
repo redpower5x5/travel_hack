@@ -191,3 +191,23 @@ async def find_similar_image(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Failed to find similar image",
         )
+
+# seearch by image id
+@router.get("/images/{image_id}", response_model=response_schemas.ImageResponse)
+# @cache(expire=settings.CACHE_EXPIRE)
+async def get_image_by_id(
+    image: int,
+    db: Session = Depends(get_db),
+):
+    """
+    Get image by id
+    """
+    image = crud.get_image_by_id(db=db, image_id=image)
+
+    if image is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Image not found",
+        )
+
+    return image
