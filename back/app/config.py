@@ -49,6 +49,7 @@ class Settings(BaseSettings):
     ACCESS_KEY: str
     REGION: str
     DEFAULT_BUCKET: str
+    S3_ENDPOINT: str = "https://localhost:9000"
 
     IMGPROXY_HOST: str = "http://localhost:50200"
 

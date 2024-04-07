@@ -63,7 +63,7 @@ def upload_file(
         # save file to minio with uuid as object name
         object_name = f"{uuid4()}.{file.filename.split('.')[-1]}"
         client.put_object(settings.DEFAULT_BUCKET, object_name, file.file, file.size)
-        full_path = f"{settings.RESOURCE_ENDPOINT}/{settings.DEFAULT_BUCKET}/{object_name}"
+        full_path = f"{settings.S3_ENDPOINT}/{settings.DEFAULT_BUCKET}/{object_name}"
         s3_url = f"s3://{settings.DEFAULT_BUCKET}/{object_name}"
         imgproxy_objeect_name_base = base64UrlEncode(s3_url.encode('utf-8')).decode('utf-8')
 
@@ -83,7 +83,7 @@ def upload_file(
         raw_thumbnail_len = raw_thumbnail.getbuffer().nbytes
         #save to minio
         thumbnail_object_name = f"t{object_name.split('.')[0]}-thumb.png"
-        thumbnail_path = f"{settings.RESOURCE_ENDPOINT}/{settings.DEFAULT_BUCKET}/{thumbnail_object_name}"
+        thumbnail_path = f"{settings.S3_ENDPOINT}/{settings.DEFAULT_BUCKET}/{thumbnail_object_name}"
         client.put_object(settings.DEFAULT_BUCKET, thumbnail_object_name, raw_thumbnail, raw_thumbnail_len)
 
         response = requests.get(model_ready_imgproxy)
