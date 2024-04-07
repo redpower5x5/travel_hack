@@ -226,7 +226,7 @@ async def get_similar_images(
     # get image vector from clickhouse
     image_vector = get_image_vector(client=click, image_id=image_id)
     # find similar images via clickhouse
-    click_respone = cosine_compare(click, image_vector)
+    click_respone = cosine_compare(click, image_vector, limit=False)
     log.debug(f"click embeed output: {click_respone}")
     # get top 5 images
     click_respone = get_propper_probalities(click_respone)
