@@ -128,14 +128,18 @@ def upload_file(
         if res:
             log.info(f"Similar image found: {res}")
             # get path to similar image
-            image = crud.get_image_by_id(session, int(res[0][0]))
+            image_similar = crud.get_image_by_id(session, int(res[0][0]))
+            # get tags of similar image
+            tags_similar = crud.get_tags_of_image(session, image_similar.id)
             return response_schemas.UploadResponse(
                 status="success",
                 message="file uploaded",
+                image_id=image.id,
                 full_path=full_path,
                 thumbnail_path=thumbnail_path,
                 embed=embed,
-                similar_image_pth=image.thumbnail_file_path
+                similar_image_pth=image_similar.thumbnail_file_path,
+                suggested_tags=tags_similar
             )
         else:
             # return response
@@ -145,7 +149,8 @@ def upload_file(
                 full_path=full_path,
                 thumbnail_path=thumbnail_path,
                 embed=embed,
-                similar_image_pth="no"
+                similar_image_pth="no",
+                suggested_tags=response_schemas.TagList(count=0, tags=[])
             )
     except Exception as ex:
         log.error(f"failed to upload file {ex.with_traceback()}")

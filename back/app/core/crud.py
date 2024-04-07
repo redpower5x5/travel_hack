@@ -236,6 +236,27 @@ def get_image_by_id(db: Session, image_id: int) -> Union[response_schemas.Image,
     except NoResultFound:
         return None
 
+def get_tags_of_image(db: Session, image_id: int) -> response_schemas.TagList:
+    try:
+        tags = (
+            db.query(db_models.Tag)
+            .join(db_models.Image.tags)
+            .filter(
+                db_models.Image.id == image_id,
+            )
+            .all()
+        )
+        tags = [response_schemas.Tag.model_validate(tag) for tag in tags]
+        return response_schemas.TagList(
+            count=len(tags),
+            tags=tags,
+        )
+    except NoResultFound:
+        return response_schemas.TagList(
+            count=0,
+            tags=[],
+        )
+
 def delete_image(db: Session, image_id: int) -> None:
     """delete image from db. delte from ImageTag table as well"""
     try:

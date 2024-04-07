@@ -3,15 +3,6 @@ from pydantic import BaseModel, Field, EmailStr, validator, ConfigDict, field_va
 from decimal import Decimal
 
 
-class UploadResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True)
-
-    status: str
-    message: str
-    full_path: str
-    thumbnail_path: str
-    embed: List
-    similar_image_pth: Optional[str]
 
 class Token(BaseModel):
     access_token: str
@@ -91,3 +82,15 @@ class UserStoreList(BaseModel):
     model_config = ConfigDict(from_attributes=True)
     count: int
     user_stores: List[UserStore]
+
+class UploadResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    status: str
+    message: str
+    image_id: int
+    full_path: str
+    thumbnail_path: str
+    embed: List
+    similar_image_pth: Optional[str]
+    suggested_tags: Optional[TagList]
