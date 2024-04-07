@@ -32,7 +32,7 @@ def get_propper_probalities(data):
     if top_one.shape[0] != 0:
         response.append(data[i + top_one.argmax()])
     i += top_one.shape[0]
-    r = min(0.9, data[0][1])
+    r = min(0.9, 1 - data[0][1])
     step = 0.01
     while len(response) < 5 and r - step > 0.65:
         top_one = probs[(probs >= r - step) & (probs < r)]
