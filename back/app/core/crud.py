@@ -199,18 +199,13 @@ def get_images_by_ids(db: Session, image_ids: List[int]) -> response_schemas.Ima
             images=[],
         )
 
-def get_all_images(db: Session, page: int, per_page: int) -> response_schemas.ImageListResponse:
+def get_all_images(db: Session) -> response_schemas.ImageListResponse:
     try:
-        total_count = len(
-            db.query(db_models.Image)
-            .all()
-        )
         images = (
             db.query(db_models.Image)
-            .limit(per_page)
-            .offset((page - 1) * per_page)
             .all()
         )
+        total_count = len(images)
         images_list = [response_schemas.Image.model_validate(image) for image in images]
         return response_schemas.ImageList(
             count=total_count,

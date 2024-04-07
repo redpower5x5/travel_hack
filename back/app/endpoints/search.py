@@ -64,16 +64,14 @@ async def get_tags(
 
 # get all images with pagination
 @router.get("/images", response_model=response_schemas.ImageListResponse)
-# @cache(expire=settings.CACHE_EXPIRE)
+@cache(expire=settings.CACHE_EXPIRE)
 async def get_images(
-    page: int = Query(1),
-    per_page: int = Query(10),
     db: Session = Depends(get_db),
 ):
     """
     Get all images with pagination
     """
-    images = crud.get_all_images(db=db, page=page, per_page=per_page)
+    images = crud.get_all_images(db=db)
 
     if images is None:
         raise HTTPException(
