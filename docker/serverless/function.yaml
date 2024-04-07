@@ -7,3 +7,5 @@ spec:
     myHttpTrigger:
       numWorkers: 1
       kind: "http"
+      attributes:
+        maxRequestBodySize: 268435456 # 256MB

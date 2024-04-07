@@ -6,7 +6,7 @@ from app.config import log
 from app.schemas import response_schemas
 from app.core.dependencies import get_db
 from app.click.dependencies import get_click
-from app.click.vector_utils import cosine_compare
+from app.click.vector_utils import cosine_compare, get_image_vector
 from app.core import crud
 from app.config import settings
 from app.utils.token import get_current_active_user, get_current_active_admin
@@ -211,3 +211,25 @@ async def get_image_by_id(
         )
 
     return image
+
+# search similar images to given image id
+@router.get("/images/{image_id}/similar", response_model=response_schemas.ImageList)
+# @cache(expire=settings.CACHE_EXPIRE)
+async def get_similar_images(
+    image_id: int,
+    db: Session = Depends(get_db),
+    click = Depends(get_click),
+):
+    """
+    Get similar images to given image id
+    """
+    # get image vector from clickhouse
+    image_vector = get_image_vector(client=click, image_id=image_id)
+    # find similar images via clickhouse
+    click_respone = cosine_compare(click, image_vector)
+    log.debug(f"click embeed output: {click_respone}")
+    # get top 5 images
+    click_respone = get_propper_probalities(click_respone)
+    image_ids = [int(row[0]) for row in click_respone]
+    images: response_schemas.ImageList = crud.get_images_by_ids(db=db, image_ids=image_ids)
+    return images

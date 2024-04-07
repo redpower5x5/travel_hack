@@ -22,6 +22,12 @@ def check_if_similar(client: Any, input_embed: List[float]) -> Union[bool, List]
         return result.result_rows
     return False
 
+def get_image_vector(client: Any, image_id: int) -> List:
+    """Get image vector from clickhouse"""
+    QUERY = f'SELECT image_embedding FROM images WHERE id = {image_id}'
+    result = client.query(QUERY)
+    return result.result_rows[0][0]
+
 def add_image(client: Any, image_id: int, image_embedding: List[float], text_embedding: List[float]) -> None:
     """Add image to clickhouse"""
     row = [image_id, image_embedding, text_embedding]
