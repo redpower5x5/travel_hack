@@ -13,6 +13,7 @@ from app.utils.token import get_current_active_user, get_current_active_admin
 from base64 import b64encode
 from fastapi_cache.decorator import cache
 from typing import List
+import numpy as np
 import requests
 import time
 
@@ -21,7 +22,27 @@ router = APIRouter(
     tags=["search"],
 )
 
+def get_propper_probalities(data):
 
+    response = []
+    probs = np.array([1-elem[1] for elem in data])
+    #first range
+    i = 0
+    top_one = probs[(probs >= 0.9) & (probs < 0.98)]
+    if top_one.shape[0] != 0:
+        response.append(data[i + top_one.argmax()])
+    i += top_one.shape[0]
+    r = min(0.9, data[0][1])
+    step = 0.01
+    while len(response) < 5 and r - step > 0.65:
+        top_one = probs[(probs >= r - step) & (probs < r)]
+        if top_one.shape[0] != 0:
+            response.append(data[i + top_one.argmax()])
+            r = top_one.max() - 0.015
+        else:
+            r -= step
+        i += top_one.shape[0]
+    return response
 # get all tags
 @router.get("/tags", response_model=response_schemas.TagList)
 @cache(expire=settings.CACHE_EXPIRE)
@@ -158,6 +179,8 @@ async def find_similar_image(
         embed = response.json()["embed"][0]
         # find similar images via clickhouse
         click_respone = cosine_compare(click, embed)
+        # get top 5 images
+        click_respone = get_propper_probalities(click_respone)
         image_ids = [int(row[0]) for row in click_respone]
         images: response_schemas.ImageList = crud.get_images_by_ids(db=db, image_ids=image_ids)
         return images

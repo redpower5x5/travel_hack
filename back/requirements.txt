@@ -18,3 +18,4 @@ minio
 clickhouse-connect
 bcrypt
 pillow
+numpy
