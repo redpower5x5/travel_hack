@@ -19,6 +19,14 @@ services:
         max-size: 100m
         max-file: "3"
 
+  clip-function:
+    image: clip-function:latest
+    container_name: clip-function
+    volumes:
+      - ./serverless/function.yaml:/etc/nuclio/config/processor/processor.yaml
+    ports:
+      - 8090:8080
+
   backend:
     environment:
       ENABLE_SERVERLESS: 1

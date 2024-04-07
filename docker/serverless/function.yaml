@@ -1,0 +1,9 @@
+meta:
+  name: "clip-function"
+spec:
+  handler: main:handler
+  runtime: python:3.9
+  triggers:
+    myHttpTrigger:
+      numWorkers: 1
+      kind: "http"
