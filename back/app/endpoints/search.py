@@ -95,8 +95,10 @@ async def search_images(
     """
     Get all images by tags and/or search string
     """
-    if len(search) < 3: search = None
-    if len(tags) < 1: tags = None
+    if search != None:
+        if len(search) < 3: search = None
+    if tags != None:
+        if len(tags) < 1: tags = None
 
     if search is None and tags is None:
         if page and per_page:
