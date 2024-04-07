@@ -276,6 +276,28 @@ def create_user_store(db: Session, user: response_schemas.User, store_name: str)
     except NoResultFound:
         return None
 
+def update_user_store(db: Session, user: response_schemas.User, store_id: int, store_name: str) -> response_schemas.UserStore:
+    try:
+        db_store = (
+            db.query(db_models.UserStore)
+            .filter(
+                db_models.UserStore.id == store_id,
+                db_models.UserStore.user_id == user.id,
+            )
+            .one()
+        )
+        db_store.store_name = store_name
+        db.commit()
+        db.refresh(db_store)
+
+        db_store = response_schemas.UserStore.model_validate(db_store)
+
+        log.info(f"Updated store: {db_store}")
+        return db_store
+
+    except NoResultFound:
+        return None
+
 def add_image_to_user_store(db: Session, user: response_schemas.User, store_id: int, image_id: int) -> response_schemas.UserStore:
     try:
         db_store = db_models.UserImageStore(

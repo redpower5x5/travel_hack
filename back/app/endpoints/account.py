@@ -33,6 +33,22 @@ async def add_user_store(
 
     return user_store
 
+# edit user store
+@router.post("/store/{id}/edit", response_model=response_schemas.UserStore)
+async def edit_user_store(
+    id: int,
+    user_store: request_schemas.UserStoreEdit,
+    db: Session = Depends(get_db),
+    current_user: response_schemas.User = Depends(get_current_active_user)
+):
+    """
+    Edit user store
+    """
+    user_store = crud.update_user_store(db=db, user=current_user, store_id=id, store_name=user_store.store_name)
+
+    return user_store
+
+
 # get usere stores
 @router.get("/store/all", response_model=response_schemas.UserStoreList)
 async def get_user_stores(

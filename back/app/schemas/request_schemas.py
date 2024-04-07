@@ -57,3 +57,10 @@ class UserStoreCreate(BaseModel):
     """
 
     store_name: str
+
+def UserStoreEdit(BaseModel):
+    """
+    User store edit schema
+    """
+
+    store_name: str
