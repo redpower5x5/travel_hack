@@ -22,6 +22,8 @@ services:
   clip-function:
     image: clip-function:latest
     container_name: clip-function
+    networks:
+      - russpass
     volumes:
       - ./serverless/function.yaml:/etc/nuclio/config/processor/processor.yaml
     ports:
