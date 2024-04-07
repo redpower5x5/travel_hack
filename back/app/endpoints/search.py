@@ -152,7 +152,7 @@ async def search_images(
 
 # find similar image by uploaded image
 @router.post("/images/similar", response_model=response_schemas.ImageList)
-@cache(expire=settings.CACHE_EXPIRE)
+# @cache(expire=settings.CACHE_EXPIRE)
 async def find_similar_image(
     file: UploadFile = File(...),
     db: Session = Depends(get_db),

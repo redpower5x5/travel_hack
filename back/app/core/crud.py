@@ -201,6 +201,10 @@ def get_images_by_ids(db: Session, image_ids: List[int]) -> response_schemas.Ima
 
 def get_all_images(db: Session, page: int, per_page: int) -> response_schemas.ImageListResponse:
     try:
+        total_count = (
+            db.query(db_models.Image)
+            .all().count()
+        )
         images = (
             db.query(db_models.Image)
             .limit(per_page)
@@ -209,7 +213,7 @@ def get_all_images(db: Session, page: int, per_page: int) -> response_schemas.Im
         )
         images_list = [response_schemas.Image.model_validate(image) for image in images]
         return response_schemas.ImageList(
-            count=len(images_list),
+            count=total_count,
             images=images_list,
         )
     except NoResultFound:

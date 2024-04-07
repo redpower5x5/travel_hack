@@ -10,3 +10,4 @@ env/
 data/
 node_modules/
 __pycache__/
+mem.ipynb
