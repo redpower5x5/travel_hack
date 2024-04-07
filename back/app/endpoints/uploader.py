@@ -7,7 +7,7 @@ from app.schemas import response_schemas, request_schemas
 from app.core.dependencies import get_db
 from app.s3.storage import get_client
 from app.click.dependencies import get_click
-from app.click.vector_utils import check_if_similar, add_image
+from app.click.vector_utils import check_if_similar, add_image, cosine_compare
 from minio import Minio
 from uuid import uuid4
 from base64 import urlsafe_b64encode, b64encode
@@ -122,6 +122,8 @@ def upload_file(
         ))
         # check if similar image exists
         res = check_if_similar(click_clinet, embed)
+        # find most similar image
+        most_sim = cosine_compare(click_clinet, embed)
         # save to clickhouse
         add_image(click_clinet, image.id, embed, [0])
         log.debug(f"Similar image found: {res}")
@@ -142,6 +144,9 @@ def upload_file(
                 suggested_tags=tags_similar
             )
         else:
+            image_similar = crud.get_image_by_id(session, int(most_sim[0][0]))
+            # get tags of similar image
+            tags_similar = crud.get_tags_of_image(session, image_similar.id)
             # return response
             return response_schemas.UploadResponse(
                 status="success",
@@ -150,7 +155,7 @@ def upload_file(
                 thumbnail_path=thumbnail_path,
                 embed=embed,
                 similar_image_pth="no",
-                suggested_tags=response_schemas.TagList(count=0, tags=[])
+                suggested_tags=tags_similar
             )
     except Exception as ex:
         log.error(f"failed to upload file {ex.with_traceback()}")
