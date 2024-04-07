@@ -95,15 +95,18 @@ async def search_images(
     """
     Get all images by tags and/or search string
     """
-    if page and per_page:
-        images = crud.get_all_images(db=db, on_page=per_page, page_num=page)
-        return images
+    if len(search) < 3: search = None
+    if len(tags) < 1: tags = None
 
     if search is None and tags is None:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="No tags and search string",
-        )
+        if page and per_page:
+            images = crud.get_all_images(db=db, on_page=per_page, page_num=page)
+            return images
+        else:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="No tags and search string",
+            )
     if search:
         log.debug(f"searching images by {search}")
         # search images via clickhouse
