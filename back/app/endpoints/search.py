@@ -230,6 +230,7 @@ async def get_similar_images(
     log.debug(f"click embeed output: {click_respone}")
     # get top 5 images
     click_respone = get_propper_probalities(click_respone)
+    log.debug(f"click embeed output after filter: {click_respone}")
     image_ids = [int(row[0]) for row in click_respone]
     images: response_schemas.ImageList = crud.get_images_by_ids(db=db, image_ids=image_ids)
     return images
