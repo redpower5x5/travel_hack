@@ -8,7 +8,8 @@ from sqlalchemy import (
     UniqueConstraint,
     TEXT,
     Numeric,
-    Boolean
+    Boolean,
+    PickleType
 )
 from sqlalchemy.ext.declarative import declarative_base
 from datetime import datetime
@@ -18,87 +19,52 @@ import enum
 Base = declarative_base()
 
 
-class Role(enum.Enum):
-    HR = "HR"
-    admin = "admin"
-    head_of_department = "head_of_department"
-
-class Department(Base):
-    __tablename__ = "department"
-    id = Column(Integer, primary_key=True)
-    name = Column(String(100), nullable=False)
-    created_at = Column(DateTime, default=datetime.now())
-
 class User(Base):
     __tablename__ = "user"
     id = Column(Integer, primary_key=True)
     username = Column(String(50), nullable=False)
     email = Column(String(50), nullable=False)
-    phone = Column(String(50), nullable=False)
     hashed_password = Column(String(100), nullable=False)
-    role = Column(Enum(Role), default=Role.HR)
-    department_id = Column(Integer, ForeignKey("department.id"), nullable=True)
     created_at = Column(DateTime, default=datetime.now())
-    department = relationship("Department", backref="user")
 
-class Employee(Base):
-    __tablename__ = "employee"
+class Tag(Base):
+    __tablename__ = "tag"
     id = Column(Integer, primary_key=True)
-    email = Column(String(50), nullable=False)
-    name = Column(String(100), nullable=False)
-    phone = Column(String(50), nullable=False)
-    sex = Column(String(10), nullable=False)
-    age = Column(Integer, nullable=False)
-    department_id = Column(Integer, ForeignKey("department.id"))
-    avatar = Column(TEXT, nullable=False)
-    quit_probability = Column(Numeric(10, 2), nullable=True)
+    name = Column(String(50), nullable=False)
     created_at = Column(DateTime, default=datetime.now())
-    department = relationship("Department", backref="employee")
 
-class ToxcicityLevel(enum.Enum):
-    LOW = "LOW"
-    MEDIUM = "MEDIUM"
-    HIGH = "HIGH"
-
-class Emotion(enum.Enum):
-    POSITIVE = "POSITIVE"
-    NEGATIVE = "NEGATIVE"
-    NEUTRAL = "NEUTRAL"
-
-class Period(Base):
-    __tablename__ = "period"
+class Image(Base):
+    __tablename__ = "image"
     id = Column(Integer, primary_key=True)
-    start_date = Column(DateTime, nullable=False)
-    end_date = Column(DateTime, nullable=False)
+    original_file_path = Column(String(255), nullable=False)
+    thumbnail_file_path = Column(String(255), nullable=False)
+    description = Column(TEXT, nullable=True)
+    exif = Column(PickleType, nullable=False)
+    metainfo = Column(PickleType, nullable=True)
     created_at = Column(DateTime, default=datetime.now())
+    tags = relationship("Tag", secondary="image_tag", backref="images")
 
-class EmployeMetrica(Base):
-    __tablename__ = "employee_metrica"
+    def __repr__(self):
+        return f"Image(id={self.id!r}, original_file_path={self.original_file_path!r}, thumbnail_file_path={self.thumbnail_file_path!r}, description={self.description!r}, exif={self.exif!r}, metainfo={self.metainfo!r}, created_at={self.created_at!r})"
+
+class ImageTag(Base):
+    __tablename__ = "image_tag"
+    image_id = Column(Integer, ForeignKey("image.id"), primary_key=True)
+    tag_id = Column(Integer, ForeignKey("tag.id"), primary_key=True)
+
+class UserStore(Base):
+    __tablename__ = "user_store"
     id = Column(Integer, primary_key=True)
-    employee_id = Column(Integer, ForeignKey("employee.id"))
-    number_of_answered_emails = Column(Integer, nullable=False)
-    number_of_sent_emails = Column(Integer, nullable=False)
-    number_of_received_emails = Column(Integer, nullable=False)
-    mean_number_of_recipients_in_one_email_for_user = Column(Numeric(10, 2), nullable=False)
-    number_of_emails_read_after_x_minutes = Column(Integer, nullable=False)
-    mean_number_of_days_between_receiving_emails_and_read = Column(Integer, nullable=False)
-    number_of_sent_emails_outside_of_working_hours = Column(Integer, nullable=False)
-    received_and_sent_emails_proportion_for_user = Column(Numeric(10, 2), nullable=False)
-    mean_number_of_not_answered_questions_in_email = Column(Numeric(10, 2), nullable=False)
-    mean_length_of_user_emails = Column(Numeric(10, 2), nullable=False)
-    mean_answering_time_for_user = Column(Numeric(10, 2), nullable=False)
-    number_of_passed_corporative_tests_or_courses_for_user = Column(Integer, nullable=False)
-    number_of_unique_recipients_of_emails_for_user = Column(Integer, nullable=False)
-    number_of_unique_departments_in_emails_for_user = Column(Integer, nullable=False)
-    toxcity_in_sent_emails_for_user = Column(Enum(ToxcicityLevel), default=ToxcicityLevel.LOW)
-    toxcity_in_received_emails_for_user = Column(Enum(ToxcicityLevel), default=ToxcicityLevel.LOW)
-    emotions_in_sent_emails_for_user = Column(Enum(Emotion), default=Emotion.NEUTRAL)
-    emotions_in_received_emails_for_user = Column(Enum(Emotion), default=Emotion.NEUTRAL)
-    salary = Column(Integer, nullable=False)
-    high_priority_emails_reply_delay = Column(Integer, nullable=False)
-    medium_priority_emails_reply_delay = Column(Integer, nullable=False)
-    low_priority_emails_reply_delay = Column(Integer, nullable=False)
-    period_id = Column(Integer, ForeignKey("period.id"))
+    user_id = Column(Integer, ForeignKey("user.id"))
+    store_name = Column(TEXT, nullable=False)
     created_at = Column(DateTime, default=datetime.now())
-    period = relationship("Period", backref="employee_metrica")
+    user = relationship("User", backref="user_store")
 
+class UserImageStore(Base):
+    __tablename__ = "user_image_store"
+    id = Column(Integer, primary_key=True)
+    image_id = Column(Integer, ForeignKey("image.id"))
+    store_id = Column(Integer, ForeignKey("user_store.id"))
+    created_at = Column(DateTime, default=datetime.now())
+    image = relationship("Image", backref="user_image_store")
+    user_store = relationship("UserStore", backref="user_image_store")

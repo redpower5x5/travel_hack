@@ -15,3 +15,6 @@ uvicorn
 python-multipart
 alembic
 minio
+clickhouse-connect
+bcrypt
+pillow

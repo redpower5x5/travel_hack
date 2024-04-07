@@ -1,6 +1,7 @@
 from app.config import log
 from app.core.database import init_db
 from app.s3.storage import connect_storage
+from app.click.clickhouse import connect_clickhouse
 from app.config import settings
 
 from fastapi import FastAPI
@@ -13,18 +14,20 @@ from redis import asyncio as aioredis
 
 
 async def startup():
-    # try:
-    #     init_db()
-    # except Exception as ex:
-    #     log.exception(f"failed to preparedb {ex}")
-    #     pass
+    try:
+        init_db()
+    except Exception as ex:
+        log.exception(f"failed to preparedb {ex}")
+        pass
     connect_storage()
+    connect_clickhouse()
     redis = aioredis.from_url(settings.REDIS_URI)
     FastAPICache.init(RedisBackend(redis), prefix="fastapi-cache")
 
 
 async def shutdown():
     log.info("shutting down")
+    FastAPICache.clear()
     pass
 
 
@@ -34,7 +37,7 @@ def create_app() -> FastAPI:
     Returns:
         FastAPI:
     """
-    # init_db()
+    init_db()
     _app = FastAPI()
 
     # region middleware

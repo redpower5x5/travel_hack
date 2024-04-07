@@ -5,3 +5,356 @@
 2024-04-05T03:29:12.494529+0300 INFO shutting down
 2024-04-05T03:29:58.901577+0300 INFO shutting down
 2024-04-05T03:39:49.400000+0300 INFO shutting down
+2024-04-06T19:55:57.877117+0300 ERROR failed to upload file 1 validation error for UploadResponse
+embed
+  Field required [type=missing, input_value={'status': 'success', 'me...57c8c25216c5-thumb.png'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.6/v/missing
+2024-04-06T19:58:46.022612+0300 INFO shutting down
+2024-04-06T19:58:55.774819+0300 ERROR failed to upload file a bytes-like object is required, not '_io.BytesIO'
+2024-04-06T20:02:17.867185+0300 INFO shutting down
+2024-04-06T20:03:25.161416+0300 ERROR failed to upload file ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+2024-04-06T20:04:55.585946+0300 ERROR failed to upload file 'method' object is not subscriptable
+2024-04-06T20:06:45.734540+0300 INFO shutting down
+2024-04-06T20:06:58.612306+0300 ERROR failed to upload file 'method' object is not subscriptable
+2024-04-06T20:07:11.447272+0300 INFO shutting down
+2024-04-06T20:07:20.259030+0300 ERROR failed to upload file 'method' object is not subscriptable
+2024-04-06T20:10:39.368683+0300 INFO shutting down
+2024-04-06T20:10:53.976143+0300 ERROR failed to upload file 'method' object is not subscriptable
+2024-04-06T20:11:29.121806+0300 INFO shutting down
+2024-04-06T20:15:26.552507+0300 INFO shutting down
+2024-04-06T21:26:21.815278+0300 INFO initialized db
+2024-04-06T21:29:29.834165+0300 INFO initialized db
+2024-04-06T21:31:34.523283+0300 INFO initialized db
+2024-04-06T21:31:34.573930+0300 DEBUG connected to clikchouselocalhost
+2024-04-06T21:32:54.576524+0300 INFO initialized db
+2024-04-06T21:32:54.592633+0300 DEBUG connected to clikchouselocalhost
+2024-04-06T21:35:45.742599+0300 INFO initialized db
+2024-04-06T21:35:45.756285+0300 DEBUG connected to clikchouselocalhost
+2024-04-06T21:36:41.530870+0300 INFO initialized db
+2024-04-06T21:36:41.543727+0300 DEBUG connected to clikchouselocalhost
+2024-04-06T21:38:21.000923+0300 INFO initialized db
+2024-04-06T21:38:21.012130+0300 DEBUG connected to clikchouselocalhost
+2024-04-06T21:38:21.018147+0300 DEBUG table new_table created or exists already!
+2024-04-06T21:39:42.143277+0300 INFO shutting down
+2024-04-07T00:17:02.741653+0300 INFO initialized db
+2024-04-07T00:18:08.255476+0300 INFO initialized db
+2024-04-07T00:18:08.537320+0300 INFO initialized db
+2024-04-07T00:18:08.663944+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T00:18:08.677753+0300 DEBUG table new_table created or exists already!
+2024-04-07T00:18:27.037407+0300 ERROR failed to upload file 'NoneType' object has no attribute 'put_object'
+2024-04-07T00:19:39.176280+0300 INFO shutting down
+2024-04-07T00:19:42.239034+0300 INFO initialized db
+2024-04-07T00:19:42.476645+0300 INFO initialized db
+2024-04-07T00:19:42.492642+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T00:19:42.495187+0300 DEBUG table new_table created or exists already!
+2024-04-07T00:22:03.440439+0300 INFO shutting down
+2024-04-07T00:22:06.429102+0300 INFO initialized db
+2024-04-07T00:22:06.700198+0300 INFO initialized db
+2024-04-07T00:22:06.716494+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T00:22:06.719501+0300 DEBUG table new_table created or exists already!
+2024-04-07T00:23:45.230986+0300 INFO shutting down
+2024-04-07T00:23:48.281665+0300 INFO initialized db
+2024-04-07T00:23:48.530728+0300 INFO initialized db
+2024-04-07T00:23:48.545975+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T00:23:48.548630+0300 DEBUG table new_table created or exists already!
+2024-04-07T00:25:43.737815+0300 INFO shutting down
+2024-04-07T00:25:46.484955+0300 INFO initialized db
+2024-04-07T00:25:46.738567+0300 INFO initialized db
+2024-04-07T00:25:46.753150+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T00:25:46.755184+0300 DEBUG table new_table created or exists already!
+2024-04-07T00:27:58.890010+0300 INFO shutting down
+2024-04-07T00:28:03.788901+0300 INFO initialized db
+2024-04-07T00:28:04.065464+0300 INFO initialized db
+2024-04-07T00:28:04.078934+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T00:28:04.082319+0300 DEBUG table new_table created or exists already!
+2024-04-07T00:28:47.101729+0300 INFO shutting down
+2024-04-07T00:28:49.452148+0300 INFO initialized db
+2024-04-07T00:28:49.636095+0300 INFO initialized db
+2024-04-07T00:28:49.649299+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T00:28:49.651444+0300 DEBUG table new_table created or exists already!
+2024-04-07T00:28:57.057188+0300 INFO Created image: id=2 original_file_path='localhost:9000/images/9090e38b-05d6-45d4-bc6e-17016a2de00d.jpg' thumbnail_file_path='localhost:9000/images/t9090e38b-05d6-45d4-bc6e-17016a2de00d-thumb.png' description='' exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2} metainfo={}
+2024-04-07T00:32:10.095298+0300 INFO shutting down
+2024-04-07T00:32:13.881424+0300 INFO initialized db
+2024-04-07T00:32:55.496353+0300 INFO initialized db
+2024-04-07T00:32:55.696578+0300 INFO initialized db
+2024-04-07T00:32:55.710586+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T00:32:55.712738+0300 DEBUG table new_table created or exists already!
+2024-04-07T00:33:06.768624+0300 INFO Created image: id=3 original_file_path='localhost:9000/images/10557a38-b782-46c5-9add-6057698b53d7.jpg' thumbnail_file_path='localhost:9000/images/t10557a38-b782-46c5-9add-6057698b53d7-thumb.png' description='' exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2} metainfo={}
+2024-04-07T00:37:11.950442+0300 INFO shutting down
+2024-04-07T00:37:15.356958+0300 INFO initialized db
+2024-04-07T00:37:15.669401+0300 INFO initialized db
+2024-04-07T00:37:15.712651+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T00:37:15.721686+0300 DEBUG table new_table created or exists already!
+2024-04-07T00:37:52.972324+0300 INFO Created image: id=4 original_file_path='localhost:9000/images/83dfcde1-d82f-41a0-aeb2-aa3401cb745b.jpg' thumbnail_file_path='localhost:9000/images/t83dfcde1-d82f-41a0-aeb2-aa3401cb745b-thumb.png' description='' exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2} metainfo={}
+2024-04-07T00:44:15.440595+0300 INFO shutting down
+2024-04-07T00:44:18.580793+0300 INFO initialized db
+2024-04-07T00:44:18.829389+0300 INFO initialized db
+2024-04-07T00:44:18.843316+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T00:44:18.845498+0300 DEBUG table new_table created or exists already!
+2024-04-07T00:50:36.714098+0300 INFO shutting down
+2024-04-07T00:50:39.768318+0300 INFO initialized db
+2024-04-07T00:50:40.013343+0300 INFO initialized db
+2024-04-07T00:50:40.025425+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T00:50:40.027546+0300 DEBUG table new_table created or exists already!
+2024-04-07T00:53:35.909442+0300 INFO shutting down
+2024-04-07T00:53:38.543502+0300 INFO initialized db
+2024-04-07T00:53:38.783776+0300 INFO initialized db
+2024-04-07T00:53:38.827934+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T00:53:38.836349+0300 DEBUG table new_table created or exists already!
+2024-04-07T00:54:21.971279+0300 INFO Created image: id=5 original_file_path='localhost:9000/images/1ffd02ff-7ab2-4f3f-bf30-026df7f887f8.jpg' thumbnail_file_path='localhost:9000/images/t1ffd02ff-7ab2-4f3f-bf30-026df7f887f8-thumb.png' description='kek' exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:10:05 01:28:20', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 9.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:10:03 12:24:14', 'DateTimeDigitized': '2019:10:03 12:24:14', 'BrightnessValue': 9.696875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 1.6953125, 'MeteringMode': 2, 'LightSource': 10, 'Flash': 16, 'FocalLength': 85.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.00125, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 80, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 1, 'RecommendedExposureIndex': 80, 'LensSpecification': (85.0, 85.0, 1.8, 1.8), 'LensModel': 'E 85mm F1.8', 'FocalLengthIn35mmFilm': 85, 'SceneCaptureType': 0, 'Contrast': 2} metainfo={'jopa': 'lol'}
+2024-04-07T00:55:50.308373+0300 INFO shutting down
+2024-04-07T00:55:53.085771+0300 INFO initialized db
+2024-04-07T00:55:53.333523+0300 INFO initialized db
+2024-04-07T00:55:53.349963+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T00:55:53.352277+0300 DEBUG table new_table created or exists already!
+2024-04-07T00:56:07.673671+0300 INFO Created image: id=6 original_file_path='localhost:9000/images/f5eb5b41-ffcb-4401-a7e2-89abd27691a6.jpg' thumbnail_file_path='localhost:9000/images/tf5eb5b41-ffcb-4401-a7e2-89abd27691a6-thumb.png' description='meem' exif={'ResolutionUnit': 2, 'ExifOffset': 248, 'Make': 'SONY', 'Model': 'ILCE-7M3', 'Software': 'Adobe Photoshop Lightroom Classic 8.4.1 (Macintosh)', 'DateTime': '2020:10:12 01:59:27', 'YResolution': 300.0, 'XResolution': 300.0, 'Artist': 'Rustam Shagimordanov', 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.965784, 'ApertureValue': 2.970854, 'DateTimeOriginal': '2020:10:07 23:49:48', 'DateTimeDigitized': '2020:10:07 23:49:48', 'BrightnessValue': 2.2671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 2.96875, 'MeteringMode': 2, 'LightSource': 15, 'Flash': 16, 'FocalLength': 17.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 1677.41796875, 'FocalPlaneYResolution': 1677.41796875, 'OffsetTime': '+03:00', 'OffsetTimeOriginal': '+03:00', 'OffsetTimeDigitized': '+03:00', 'FocalPlaneResolutionUnit': 3, 'FileSource': b'\x03', 'ExposureTime': 0.008, 'FNumber': 2.8, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 640, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 1, 'RecommendedExposureIndex': 640, 'LensSpecification': (17.0, 28.0, 2.8, 2.8), 'LensModel': 'E 17-28mm F2.8-2.8', 'FocalLengthIn35mmFilm': 17, 'SceneCaptureType': 0, 'Contrast': 2, 'Saturation': 2, 'Sharpness': 2} metainfo={'jopa': 'lol'}
+2024-04-07T01:45:05.104560+0300 INFO shutting down
+2024-04-07T01:46:23.906433+0300 INFO initialized db
+2024-04-07T01:46:48.524338+0300 INFO initialized db
+2024-04-07T01:46:48.833985+0300 INFO initialized db
+2024-04-07T01:46:48.876379+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T01:46:48.882512+0300 DEBUG table new_table created or exists already!
+2024-04-07T01:49:03.892144+0300 INFO shutting down
+2024-04-07T01:49:09.018639+0300 INFO initialized db
+2024-04-07T01:49:09.297243+0300 INFO initialized db
+2024-04-07T01:49:09.311161+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T01:49:09.313977+0300 DEBUG table new_table created or exists already!
+2024-04-07T01:50:38.419581+0300 INFO shutting down
+2024-04-07T01:50:40.622796+0300 INFO initialized db
+2024-04-07T01:50:40.825753+0300 INFO initialized db
+2024-04-07T01:50:40.837247+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T01:50:40.840442+0300 DEBUG table new_table created or exists already!
+2024-04-07T01:50:42.794544+0300 DEBUG images: [<app.models.db_models.Image object at 0x11c4c0770>, <app.models.db_models.Image object at 0x11c4c07a0>, <app.models.db_models.Image object at 0x11c4c07d0>]
+2024-04-07T01:52:29.292469+0300 INFO shutting down
+2024-04-07T01:52:32.204213+0300 INFO initialized db
+2024-04-07T01:52:32.463415+0300 INFO initialized db
+2024-04-07T01:52:32.475403+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T01:52:32.477537+0300 DEBUG table new_table created or exists already!
+2024-04-07T01:52:34.118158+0300 DEBUG images: [Image(id=4, original_file_path='localhost:9000/images/83dfcde1-d82f-41a0-aeb2-aa3401cb745b.jpg', thumbnail_file_path='localhost:9000/images/t83dfcde1-d82f-41a0-aeb2-aa3401cb745b-thumb.png', description='', exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}, metainfo={}, created_at=datetime.datetime(2024, 4, 7, 0, 37, 13, 662451)), Image(id=5, original_file_path='localhost:9000/images/1ffd02ff-7ab2-4f3f-bf30-026df7f887f8.jpg', thumbnail_file_path='localhost:9000/images/t1ffd02ff-7ab2-4f3f-bf30-026df7f887f8-thumb.png', description='kek', exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:10:05 01:28:20', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 9.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:10:03 12:24:14', 'DateTimeDigitized': '2019:10:03 12:24:14', 'BrightnessValue': 9.696875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 1.6953125, 'MeteringMode': 2, 'LightSource': 10, 'Flash': 16, 'FocalLength': 85.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.00125, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 80, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 1, 'RecommendedExposureIndex': 80, 'LensSpecification': (85.0, 85.0, 1.8, 1.8), 'LensModel': 'E 85mm F1.8', 'FocalLengthIn35mmFilm': 85, 'SceneCaptureType': 0, 'Contrast': 2}, metainfo={'jopa': 'lol'}, created_at=datetime.datetime(2024, 4, 7, 0, 53, 37, 357192)), Image(id=6, original_file_path='localhost:9000/images/f5eb5b41-ffcb-4401-a7e2-89abd27691a6.jpg', thumbnail_file_path='localhost:9000/images/tf5eb5b41-ffcb-4401-a7e2-89abd27691a6-thumb.png', description='meem', exif={'ResolutionUnit': 2, 'ExifOffset': 248, 'Make': 'SONY', 'Model': 'ILCE-7M3', 'Software': 'Adobe Photoshop Lightroom Classic 8.4.1 (Macintosh)', 'DateTime': '2020:10:12 01:59:27', 'YResolution': 300.0, 'XResolution': 300.0, 'Artist': 'Rustam Shagimordanov', 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.965784, 'ApertureValue': 2.970854, 'DateTimeOriginal': '2020:10:07 23:49:48', 'DateTimeDigitized': '2020:10:07 23:49:48', 'BrightnessValue': 2.2671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 2.96875, 'MeteringMode': 2, 'LightSource': 15, 'Flash': 16, 'FocalLength': 17.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 1677.41796875, 'FocalPlaneYResolution': 1677.41796875, 'OffsetTime': '+03:00', 'OffsetTimeOriginal': '+03:00', 'OffsetTimeDigitized': '+03:00', 'FocalPlaneResolutionUnit': 3, 'FileSource': b'\x03', 'ExposureTime': 0.008, 'FNumber': 2.8, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 640, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 1, 'RecommendedExposureIndex': 640, 'LensSpecification': (17.0, 28.0, 2.8, 2.8), 'LensModel': 'E 17-28mm F2.8-2.8', 'FocalLengthIn35mmFilm': 17, 'SceneCaptureType': 0, 'Contrast': 2, 'Saturation': 2, 'Sharpness': 2}, metainfo={'jopa': 'lol'}, created_at=datetime.datetime(2024, 4, 7, 0, 55, 51, 878752))]
+2024-04-07T01:56:28.655810+0300 INFO shutting down
+2024-04-07T01:56:31.071625+0300 INFO initialized db
+2024-04-07T01:56:31.346643+0300 INFO initialized db
+2024-04-07T01:56:31.358142+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T01:56:31.360404+0300 DEBUG table new_table created or exists already!
+2024-04-07T01:56:33.562039+0300 DEBUG images: [Image(id=4, original_file_path='localhost:9000/images/83dfcde1-d82f-41a0-aeb2-aa3401cb745b.jpg', thumbnail_file_path='localhost:9000/images/t83dfcde1-d82f-41a0-aeb2-aa3401cb745b-thumb.png', description='', exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}, metainfo={}, created_at=datetime.datetime(2024, 4, 7, 0, 37, 13, 662451)), Image(id=5, original_file_path='localhost:9000/images/1ffd02ff-7ab2-4f3f-bf30-026df7f887f8.jpg', thumbnail_file_path='localhost:9000/images/t1ffd02ff-7ab2-4f3f-bf30-026df7f887f8-thumb.png', description='kek', exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:10:05 01:28:20', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 9.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:10:03 12:24:14', 'DateTimeDigitized': '2019:10:03 12:24:14', 'BrightnessValue': 9.696875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 1.6953125, 'MeteringMode': 2, 'LightSource': 10, 'Flash': 16, 'FocalLength': 85.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.00125, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 80, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 1, 'RecommendedExposureIndex': 80, 'LensSpecification': (85.0, 85.0, 1.8, 1.8), 'LensModel': 'E 85mm F1.8', 'FocalLengthIn35mmFilm': 85, 'SceneCaptureType': 0, 'Contrast': 2}, metainfo={'jopa': 'lol'}, created_at=datetime.datetime(2024, 4, 7, 0, 53, 37, 357192)), Image(id=6, original_file_path='localhost:9000/images/f5eb5b41-ffcb-4401-a7e2-89abd27691a6.jpg', thumbnail_file_path='localhost:9000/images/tf5eb5b41-ffcb-4401-a7e2-89abd27691a6-thumb.png', description='meem', exif={'ResolutionUnit': 2, 'ExifOffset': 248, 'Make': 'SONY', 'Model': 'ILCE-7M3', 'Software': 'Adobe Photoshop Lightroom Classic 8.4.1 (Macintosh)', 'DateTime': '2020:10:12 01:59:27', 'YResolution': 300.0, 'XResolution': 300.0, 'Artist': 'Rustam Shagimordanov', 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.965784, 'ApertureValue': 2.970854, 'DateTimeOriginal': '2020:10:07 23:49:48', 'DateTimeDigitized': '2020:10:07 23:49:48', 'BrightnessValue': 2.2671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 2.96875, 'MeteringMode': 2, 'LightSource': 15, 'Flash': 16, 'FocalLength': 17.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 1677.41796875, 'FocalPlaneYResolution': 1677.41796875, 'OffsetTime': '+03:00', 'OffsetTimeOriginal': '+03:00', 'OffsetTimeDigitized': '+03:00', 'FocalPlaneResolutionUnit': 3, 'FileSource': b'\x03', 'ExposureTime': 0.008, 'FNumber': 2.8, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 640, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 1, 'RecommendedExposureIndex': 640, 'LensSpecification': (17.0, 28.0, 2.8, 2.8), 'LensModel': 'E 17-28mm F2.8-2.8', 'FocalLengthIn35mmFilm': 17, 'SceneCaptureType': 0, 'Contrast': 2, 'Saturation': 2, 'Sharpness': 2}, metainfo={'jopa': 'lol'}, created_at=datetime.datetime(2024, 4, 7, 0, 55, 51, 878752))]
+2024-04-07T01:56:33.563419+0300 DEBUG images_list: [Image(id=4, original_file_path='localhost:9000/images/83dfcde1-d82f-41a0-aeb2-aa3401cb745b.jpg', thumbnail_file_path='localhost:9000/images/t83dfcde1-d82f-41a0-aeb2-aa3401cb745b-thumb.png', description='', exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}, metainfo={}), Image(id=5, original_file_path='localhost:9000/images/1ffd02ff-7ab2-4f3f-bf30-026df7f887f8.jpg', thumbnail_file_path='localhost:9000/images/t1ffd02ff-7ab2-4f3f-bf30-026df7f887f8-thumb.png', description='kek', exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:10:05 01:28:20', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 9.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:10:03 12:24:14', 'DateTimeDigitized': '2019:10:03 12:24:14', 'BrightnessValue': 9.696875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 1.6953125, 'MeteringMode': 2, 'LightSource': 10, 'Flash': 16, 'FocalLength': 85.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.00125, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 80, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 1, 'RecommendedExposureIndex': 80, 'LensSpecification': (85.0, 85.0, 1.8, 1.8), 'LensModel': 'E 85mm F1.8', 'FocalLengthIn35mmFilm': 85, 'SceneCaptureType': 0, 'Contrast': 2}, metainfo={'jopa': 'lol'}), Image(id=6, original_file_path='localhost:9000/images/f5eb5b41-ffcb-4401-a7e2-89abd27691a6.jpg', thumbnail_file_path='localhost:9000/images/tf5eb5b41-ffcb-4401-a7e2-89abd27691a6-thumb.png', description='meem', exif={'ResolutionUnit': 2, 'ExifOffset': 248, 'Make': 'SONY', 'Model': 'ILCE-7M3', 'Software': 'Adobe Photoshop Lightroom Classic 8.4.1 (Macintosh)', 'DateTime': '2020:10:12 01:59:27', 'YResolution': 300.0, 'XResolution': 300.0, 'Artist': 'Rustam Shagimordanov', 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.965784, 'ApertureValue': 2.970854, 'DateTimeOriginal': '2020:10:07 23:49:48', 'DateTimeDigitized': '2020:10:07 23:49:48', 'BrightnessValue': 2.2671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 2.96875, 'MeteringMode': 2, 'LightSource': 15, 'Flash': 16, 'FocalLength': 17.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 1677.41796875, 'FocalPlaneYResolution': 1677.41796875, 'OffsetTime': '+03:00', 'OffsetTimeOriginal': '+03:00', 'OffsetTimeDigitized': '+03:00', 'FocalPlaneResolutionUnit': 3, 'FileSource': b'\x03', 'ExposureTime': 0.008, 'FNumber': 2.8, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 640, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 1, 'RecommendedExposureIndex': 640, 'LensSpecification': (17.0, 28.0, 2.8, 2.8), 'LensModel': 'E 17-28mm F2.8-2.8', 'FocalLengthIn35mmFilm': 17, 'SceneCaptureType': 0, 'Contrast': 2, 'Saturation': 2, 'Sharpness': 2}, metainfo={'jopa': 'lol'})]
+2024-04-07T02:03:55.599828+0300 INFO shutting down
+2024-04-07T02:04:15.417992+0300 INFO initialized db
+2024-04-07T02:04:15.721849+0300 INFO initialized db
+2024-04-07T02:04:15.737687+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T02:04:15.740790+0300 DEBUG table new_table created or exists already!
+2024-04-07T02:04:20.250006+0300 DEBUG images: [Image(id=4, original_file_path='localhost:9000/images/83dfcde1-d82f-41a0-aeb2-aa3401cb745b.jpg', thumbnail_file_path='localhost:9000/images/t83dfcde1-d82f-41a0-aeb2-aa3401cb745b-thumb.png', description='', exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}, metainfo={}, created_at=datetime.datetime(2024, 4, 7, 0, 37, 13, 662451)), Image(id=5, original_file_path='localhost:9000/images/1ffd02ff-7ab2-4f3f-bf30-026df7f887f8.jpg', thumbnail_file_path='localhost:9000/images/t1ffd02ff-7ab2-4f3f-bf30-026df7f887f8-thumb.png', description='kek', exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:10:05 01:28:20', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 9.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:10:03 12:24:14', 'DateTimeDigitized': '2019:10:03 12:24:14', 'BrightnessValue': 9.696875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 1.6953125, 'MeteringMode': 2, 'LightSource': 10, 'Flash': 16, 'FocalLength': 85.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.00125, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 80, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 1, 'RecommendedExposureIndex': 80, 'LensSpecification': (85.0, 85.0, 1.8, 1.8), 'LensModel': 'E 85mm F1.8', 'FocalLengthIn35mmFilm': 85, 'SceneCaptureType': 0, 'Contrast': 2}, metainfo={'jopa': 'lol'}, created_at=datetime.datetime(2024, 4, 7, 0, 53, 37, 357192)), Image(id=6, original_file_path='localhost:9000/images/f5eb5b41-ffcb-4401-a7e2-89abd27691a6.jpg', thumbnail_file_path='localhost:9000/images/tf5eb5b41-ffcb-4401-a7e2-89abd27691a6-thumb.png', description='meem', exif={'ResolutionUnit': 2, 'ExifOffset': 248, 'Make': 'SONY', 'Model': 'ILCE-7M3', 'Software': 'Adobe Photoshop Lightroom Classic 8.4.1 (Macintosh)', 'DateTime': '2020:10:12 01:59:27', 'YResolution': 300.0, 'XResolution': 300.0, 'Artist': 'Rustam Shagimordanov', 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.965784, 'ApertureValue': 2.970854, 'DateTimeOriginal': '2020:10:07 23:49:48', 'DateTimeDigitized': '2020:10:07 23:49:48', 'BrightnessValue': 2.2671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 2.96875, 'MeteringMode': 2, 'LightSource': 15, 'Flash': 16, 'FocalLength': 17.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 1677.41796875, 'FocalPlaneYResolution': 1677.41796875, 'OffsetTime': '+03:00', 'OffsetTimeOriginal': '+03:00', 'OffsetTimeDigitized': '+03:00', 'FocalPlaneResolutionUnit': 3, 'FileSource': b'\x03', 'ExposureTime': 0.008, 'FNumber': 2.8, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 640, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 1, 'RecommendedExposureIndex': 640, 'LensSpecification': (17.0, 28.0, 2.8, 2.8), 'LensModel': 'E 17-28mm F2.8-2.8', 'FocalLengthIn35mmFilm': 17, 'SceneCaptureType': 0, 'Contrast': 2, 'Saturation': 2, 'Sharpness': 2}, metainfo={'jopa': 'lol'}, created_at=datetime.datetime(2024, 4, 7, 0, 55, 51, 878752))]
+2024-04-07T02:34:42.748211+0300 INFO shutting down
+2024-04-07T02:34:45.992344+0300 INFO initialized db
+2024-04-07T02:34:46.316949+0300 INFO initialized db
+2024-04-07T02:34:46.376131+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T02:34:46.381085+0300 DEBUG table new_table created or exists already!
+2024-04-07T02:34:53.685801+0300 DEBUG images: [Image(id=4, original_file_path='localhost:9000/images/83dfcde1-d82f-41a0-aeb2-aa3401cb745b.jpg', thumbnail_file_path='localhost:9000/images/t83dfcde1-d82f-41a0-aeb2-aa3401cb745b-thumb.png', description='', exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}, metainfo={}, created_at=datetime.datetime(2024, 4, 7, 0, 37, 13, 662451)), Image(id=5, original_file_path='localhost:9000/images/1ffd02ff-7ab2-4f3f-bf30-026df7f887f8.jpg', thumbnail_file_path='localhost:9000/images/t1ffd02ff-7ab2-4f3f-bf30-026df7f887f8-thumb.png', description='kek', exif={'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:10:05 01:28:20', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 9.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:10:03 12:24:14', 'DateTimeDigitized': '2019:10:03 12:24:14', 'BrightnessValue': 9.696875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 1.6953125, 'MeteringMode': 2, 'LightSource': 10, 'Flash': 16, 'FocalLength': 85.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\x03', 'ExposureTime': 0.00125, 'FNumber': 4.0, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 80, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 1, 'RecommendedExposureIndex': 80, 'LensSpecification': (85.0, 85.0, 1.8, 1.8), 'LensModel': 'E 85mm F1.8', 'FocalLengthIn35mmFilm': 85, 'SceneCaptureType': 0, 'Contrast': 2}, metainfo={'jopa': 'lol'}, created_at=datetime.datetime(2024, 4, 7, 0, 53, 37, 357192)), Image(id=6, original_file_path='localhost:9000/images/f5eb5b41-ffcb-4401-a7e2-89abd27691a6.jpg', thumbnail_file_path='localhost:9000/images/tf5eb5b41-ffcb-4401-a7e2-89abd27691a6-thumb.png', description='meem', exif={'ResolutionUnit': 2, 'ExifOffset': 248, 'Make': 'SONY', 'Model': 'ILCE-7M3', 'Software': 'Adobe Photoshop Lightroom Classic 8.4.1 (Macintosh)', 'DateTime': '2020:10:12 01:59:27', 'YResolution': 300.0, 'XResolution': 300.0, 'Artist': 'Rustam Shagimordanov', 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.965784, 'ApertureValue': 2.970854, 'DateTimeOriginal': '2020:10:07 23:49:48', 'DateTimeDigitized': '2020:10:07 23:49:48', 'BrightnessValue': 2.2671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 2.96875, 'MeteringMode': 2, 'LightSource': 15, 'Flash': 16, 'FocalLength': 17.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 1677.41796875, 'FocalPlaneYResolution': 1677.41796875, 'OffsetTime': '+03:00', 'OffsetTimeOriginal': '+03:00', 'OffsetTimeDigitized': '+03:00', 'FocalPlaneResolutionUnit': 3, 'FileSource': b'\x03', 'ExposureTime': 0.008, 'FNumber': 2.8, 'SceneType': b'\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 640, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 1, 'RecommendedExposureIndex': 640, 'LensSpecification': (17.0, 28.0, 2.8, 2.8), 'LensModel': 'E 17-28mm F2.8-2.8', 'FocalLengthIn35mmFilm': 17, 'SceneCaptureType': 0, 'Contrast': 2, 'Saturation': 2, 'Sharpness': 2}, metainfo={'jopa': 'lol'}, created_at=datetime.datetime(2024, 4, 7, 0, 55, 51, 878752))]
+2024-04-07T02:36:22.744297+0300 INFO shutting down
+2024-04-07T02:36:25.295984+0300 INFO initialized db
+2024-04-07T02:36:25.578374+0300 INFO initialized db
+2024-04-07T02:36:25.592524+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T02:36:25.595532+0300 DEBUG table new_table created or exists already!
+2024-04-07T02:44:04.606538+0300 INFO shutting down
+2024-04-07T02:44:07.724108+0300 INFO initialized db
+2024-04-07T02:44:08.030100+0300 INFO initialized db
+2024-04-07T02:44:08.047216+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T02:44:08.049863+0300 DEBUG table new_table created or exists already!
+2024-04-07T02:48:54.692318+0300 INFO shutting down
+2024-04-07T02:48:57.539432+0300 INFO initialized db
+2024-04-07T02:48:57.833581+0300 INFO initialized db
+2024-04-07T02:48:57.846735+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T02:48:57.849267+0300 DEBUG table new_table created or exists already!
+2024-04-07T02:54:47.467035+0300 INFO shutting down
+2024-04-07T03:01:23.189665+0300 INFO initialized db
+2024-04-07T03:01:23.596594+0300 INFO initialized db
+2024-04-07T03:01:23.631076+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:01:23.634285+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:04:49.778497+0300 INFO shutting down
+2024-04-07T03:04:54.091146+0300 INFO initialized db
+2024-04-07T03:04:54.409167+0300 INFO initialized db
+2024-04-07T03:04:54.536609+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:04:54.541945+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:06:13.746855+0300 INFO Created image: id=7 original_file_path='localhost:9000/images/2a44df24-68dc-4c04-84e8-edcc200725a2.jpg' thumbnail_file_path='localhost:9000/images/t2a44df24-68dc-4c04-84e8-edcc200725a2-thumb.png' description='test_doublee' exif="{'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}" metainfo={'kk': 'll'}
+2024-04-07T03:09:32.937648+0300 INFO shutting down
+2024-04-07T03:09:36.889978+0300 INFO initialized db
+2024-04-07T03:09:37.214176+0300 INFO initialized db
+2024-04-07T03:09:37.262452+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:09:37.265385+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:09:54.416490+0300 INFO Created image: id=8 original_file_path='localhost:9000/images/2c3f38ff-60c6-4506-bea1-f175fa2013e8.jpg' thumbnail_file_path='localhost:9000/images/t2c3f38ff-60c6-4506-bea1-f175fa2013e8-thumb.png' description='test_doublee' exif="{'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}" metainfo={'kk': 'll'}
+2024-04-07T03:11:27.929601+0300 INFO shutting down
+2024-04-07T03:11:30.716328+0300 INFO initialized db
+2024-04-07T03:11:31.046740+0300 INFO initialized db
+2024-04-07T03:11:31.086249+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:11:31.090106+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:12:55.546915+0300 INFO shutting down
+2024-04-07T03:12:58.490828+0300 INFO initialized db
+2024-04-07T03:12:58.779572+0300 INFO initialized db
+2024-04-07T03:12:58.802677+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:12:58.805845+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:14:20.879203+0300 INFO Created image: id=9 original_file_path='localhost:9000/images/3cf16477-cb5d-48c1-b016-c004dd3e86f5.jpg' thumbnail_file_path='localhost:9000/images/t3cf16477-cb5d-48c1-b016-c004dd3e86f5-thumb.png' description='test_doublee' exif="{'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}" metainfo={'kk': 'll'}
+2024-04-07T03:14:20.920498+0300 DEBUG Similar image found: False
+2024-04-07T03:15:39.840580+0300 INFO shutting down
+2024-04-07T03:15:43.443481+0300 INFO initialized db
+2024-04-07T03:15:43.767859+0300 INFO initialized db
+2024-04-07T03:15:43.786877+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:15:43.789048+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:15:55.277330+0300 INFO Created image: id=10 original_file_path='localhost:9000/images/03b04205-8637-4b86-91fe-317e5e2acf85.jpg' thumbnail_file_path='localhost:9000/images/t03b04205-8637-4b86-91fe-317e5e2acf85-thumb.png' description='test_doublee' exif="{'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}" metainfo={'kk': 'll'}
+2024-04-07T03:15:55.310445+0300 DEBUG Similar image found: False
+2024-04-07T03:16:33.766108+0300 INFO Created image: id=11 original_file_path='localhost:9000/images/87602836-3c19-479b-a060-5910051509b6.jpg' thumbnail_file_path='localhost:9000/images/t87602836-3c19-479b-a060-5910051509b6-thumb.png' description='test_doublee' exif="{'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}" metainfo={'kk': 'll'}
+2024-04-07T03:16:33.796887+0300 DEBUG Similar image found: False
+2024-04-07T03:17:42.675307+0300 INFO shutting down
+2024-04-07T03:17:46.085750+0300 INFO initialized db
+2024-04-07T03:17:46.395792+0300 INFO initialized db
+2024-04-07T03:17:46.415782+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:17:46.418493+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:17:54.285046+0300 INFO Created image: id=12 original_file_path='localhost:9000/images/ad62b3ae-8baa-4db5-ac58-ad1f362a3d39.jpg' thumbnail_file_path='localhost:9000/images/tad62b3ae-8baa-4db5-ac58-ad1f362a3d39-thumb.png' description='test_doublee' exif="{'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}" metainfo={'kk': 'll'}
+2024-04-07T03:17:54.314217+0300 DEBUG Similar image found: [(5, 0.33072599087819976)]
+2024-04-07T03:17:54.314473+0300 INFO Similar image found: [(5, 0.33072599087819976)]
+2024-04-07T03:19:33.219301+0300 INFO Created image: id=13 original_file_path='localhost:9000/images/f6d47022-aa81-4c99-bb95-7b11582e2614.jpg' thumbnail_file_path='localhost:9000/images/tf6d47022-aa81-4c99-bb95-7b11582e2614-thumb.png' description='test_doublee' exif="{'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}" metainfo={'kk': 'll'}
+2024-04-07T03:19:33.267314+0300 DEBUG Similar image found: [(5, 0.33072599087819976)]
+2024-04-07T03:19:33.267694+0300 INFO Similar image found: [(5, 0.33072599087819976)]
+2024-04-07T03:20:49.852987+0300 INFO shutting down
+2024-04-07T03:20:52.676179+0300 INFO initialized db
+2024-04-07T03:20:52.982590+0300 INFO initialized db
+2024-04-07T03:20:53.005843+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:20:53.008683+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:21:08.385907+0300 INFO Created image: id=14 original_file_path='localhost:9000/images/af5f9030-bfb7-4250-baee-54823f71b841.jpg' thumbnail_file_path='localhost:9000/images/taf5f9030-bfb7-4250-baee-54823f71b841-thumb.png' description='test_doublee' exif="{'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}" metainfo={'kk': 'll'}
+2024-04-07T03:21:08.410060+0300 DEBUG Similar image found: [(5, 0.33072599087819976), (6, 0.3299092407415295), (13, 0.0), (4, 0.0)]
+2024-04-07T03:21:08.410314+0300 INFO Similar image found: [(5, 0.33072599087819976), (6, 0.3299092407415295), (13, 0.0), (4, 0.0)]
+2024-04-07T03:33:48.702413+0300 INFO shutting down
+2024-04-07T03:34:48.985544+0300 INFO initialized db
+2024-04-07T03:34:49.294642+0300 INFO initialized db
+2024-04-07T03:34:49.331632+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:34:49.335853+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:35:02.195760+0300 INFO Created image: id=15 original_file_path='localhost:9000/images/ef610b51-9a53-4d5a-9630-5659e8ef8e34.jpg' thumbnail_file_path='localhost:9000/images/tef610b51-9a53-4d5a-9630-5659e8ef8e34-thumb.png' description='test_doublee' exif="{'ResolutionUnit': 2, 'ExifOffset': 212, 'Make': 'SONY', 'Model': 'ILCE-7R', 'Software': 'Adobe Photoshop Lightroom Classic 8.3.1 (Macintosh)', 'DateTime': '2019:11:17 17:39:47', 'XResolution': 300.0, 'YResolution': 300.0, 'ExifVersion': b'0231', 'ShutterSpeedValue': 6.643856, 'ApertureValue': 4.0, 'DateTimeOriginal': '2019:11:13 17:53:55', 'DateTimeDigitized': '2019:11:13 17:53:55', 'BrightnessValue': 0.53671875, 'ExposureBiasValue': 0.0, 'MaxApertureValue': 4.0, 'MeteringMode': 2, 'LightSource': 0, 'Flash': 16, 'FocalLength': 24.0, 'ColorSpace': 1, 'DigitalZoomRatio': 1.0, 'FocalPlaneXResolution': 2100.815643310547, 'FocalPlaneYResolution': 2100.815643310547, 'OffsetTime': '+03:00', 'FocalPlaneResolutionUnit': 3, 'Saturation': 2, 'Sharpness': 2, 'FileSource': b'\\x03', 'ExposureTime': 0.01, 'FNumber': 4.0, 'SceneType': b'\\x01', 'ExposureProgram': 1, 'CustomRendered': 0, 'ISOSpeedRatings': 1250, 'ExposureMode': 1, 'SensitivityType': 2, 'WhiteBalance': 0, 'RecommendedExposureIndex': 1250, 'LensSpecification': (12.0, 24.0, 4.0, 4.0), 'LensModel': 'FE 12-24mm F4 G', 'FocalLengthIn35mmFilm': 24, 'SceneCaptureType': 0, 'Contrast': 2}" metainfo={'kk': 'll'}
+2024-04-07T03:35:02.263279+0300 DEBUG Similar image found: [(4, 0.0)]
+2024-04-07T03:35:02.266886+0300 INFO Similar image found: [(4, 0.0)]
+2024-04-07T03:36:07.012663+0300 INFO shutting down
+2024-04-07T03:36:09.233980+0300 INFO initialized db
+2024-04-07T03:36:09.456875+0300 INFO initialized db
+2024-04-07T03:36:09.475319+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:36:09.478001+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:36:27.008727+0300 DEBUG searching images by ресторан
+2024-04-07T03:36:55.642310+0300 INFO shutting down
+2024-04-07T03:36:58.000625+0300 INFO initialized db
+2024-04-07T03:36:58.217666+0300 INFO initialized db
+2024-04-07T03:36:58.234430+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:36:58.237655+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:37:00.410283+0300 DEBUG searching images by ресторан
+2024-04-07T03:37:00.499496+0300 DEBUG search response [(15, 0.6545181687218337), (4, 0.6545181687218337), (5, 0.686043867104841), (6, 0.6871686490898051)]
+2024-04-07T03:38:06.090722+0300 INFO shutting down
+2024-04-07T03:56:07.423597+0300 INFO initialized db
+2024-04-07T03:56:07.776740+0300 INFO initialized db
+2024-04-07T03:56:07.821813+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:56:07.824234+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:56:11.558480+0300 INFO shutting down
+2024-04-07T03:57:08.196553+0300 INFO initialized db
+2024-04-07T03:57:08.433374+0300 INFO initialized db
+2024-04-07T03:57:08.452239+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:57:08.454367+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:57:44.672391+0300 INFO Created user: id=1 username='admin' email='admin@admin.com'
+2024-04-07T03:58:32.129028+0300 INFO shutting down
+2024-04-07T03:58:34.556778+0300 INFO initialized db
+2024-04-07T03:58:34.812145+0300 INFO initialized db
+2024-04-07T03:58:34.835200+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:58:34.839066+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:58:55.655218+0300 INFO shutting down
+2024-04-07T03:58:57.763221+0300 INFO initialized db
+2024-04-07T03:58:57.997031+0300 INFO initialized db
+2024-04-07T03:58:58.017884+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:58:58.020711+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:58:59.542845+0300 INFO Verifying password admin against $2b$12$OYChfoQKuvn5e/vVgRwBEOyhpRvoNkaFghFY2gJZwfNGVKnA.6Ky2
+2024-04-07T03:59:09.541375+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T03:59:09.541871+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T03:59:43.883820+0300 INFO shutting down
+2024-04-07T03:59:52.870114+0300 INFO initialized db
+2024-04-07T03:59:53.206561+0300 INFO initialized db
+2024-04-07T03:59:53.227160+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T03:59:53.229838+0300 DEBUG table new_table created or exists already!
+2024-04-07T03:59:55.027047+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T03:59:55.028158+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:00:47.783762+0300 INFO shutting down
+2024-04-07T04:00:50.491720+0300 INFO initialized db
+2024-04-07T04:00:50.829021+0300 INFO initialized db
+2024-04-07T04:00:50.847674+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T04:00:50.850028+0300 DEBUG table new_table created or exists already!
+2024-04-07T04:00:58.009880+0300 INFO shutting down
+2024-04-07T04:01:00.242422+0300 INFO initialized db
+2024-04-07T04:01:00.475604+0300 INFO initialized db
+2024-04-07T04:01:00.495958+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T04:01:00.498583+0300 DEBUG table new_table created or exists already!
+2024-04-07T04:01:04.112708+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:01:04.113262+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:01:31.352965+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:01:31.353409+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:01:58.679730+0300 INFO shutting down
+2024-04-07T04:02:00.963443+0300 INFO initialized db
+2024-04-07T04:02:01.281346+0300 INFO initialized db
+2024-04-07T04:02:01.298846+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T04:02:01.302426+0300 DEBUG table new_table created or exists already!
+2024-04-07T04:02:02.045909+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:02:02.046601+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:02:02.086312+0300 INFO Created store: id=1 user_id=1 store_name='my_store'
+2024-04-07T04:02:06.592626+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:02:06.593692+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:03:12.619989+0300 INFO shutting down
+2024-04-07T04:03:14.798797+0300 INFO initialized db
+2024-04-07T04:03:15.110948+0300 INFO initialized db
+2024-04-07T04:03:15.126432+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T04:03:15.145764+0300 DEBUG table new_table created or exists already!
+2024-04-07T04:03:17.039592+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:03:17.040173+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:03:34.009780+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:03:34.010443+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:06:36.425053+0300 INFO shutting down
+2024-04-07T04:06:38.600817+0300 INFO initialized db
+2024-04-07T04:06:38.838782+0300 INFO initialized db
+2024-04-07T04:06:38.856400+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T04:06:38.859730+0300 DEBUG table new_table created or exists already!
+2024-04-07T04:06:42.126092+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:06:42.126685+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:07:09.686030+0300 INFO shutting down
+2024-04-07T04:07:11.677969+0300 INFO initialized db
+2024-04-07T04:07:11.914203+0300 INFO initialized db
+2024-04-07T04:07:11.931862+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T04:07:11.934199+0300 DEBUG table new_table created or exists already!
+2024-04-07T04:07:13.989846+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:07:13.990596+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:09:25.214164+0300 INFO shutting down
+2024-04-07T04:09:27.994335+0300 INFO initialized db
+2024-04-07T04:09:28.356678+0300 INFO initialized db
+2024-04-07T04:09:28.401775+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T04:09:28.406338+0300 DEBUG table new_table created or exists already!
+2024-04-07T04:09:38.474529+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:09:38.475258+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:09:46.858771+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:09:46.860016+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:10:28.322687+0300 INFO shutting down
+2024-04-07T04:10:30.761251+0300 INFO initialized db
+2024-04-07T04:10:31.096548+0300 INFO initialized db
+2024-04-07T04:10:31.114122+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T04:10:31.116618+0300 DEBUG table new_table created or exists already!
+2024-04-07T04:10:32.453456+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:10:32.453998+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:11:04.141525+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:11:04.142464+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:11:44.798074+0300 INFO shutting down
+2024-04-07T04:11:47.661949+0300 INFO initialized db
+2024-04-07T04:11:47.987290+0300 INFO initialized db
+2024-04-07T04:11:48.008366+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T04:11:48.010590+0300 DEBUG table new_table created or exists already!
+2024-04-07T04:11:53.651184+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:11:53.651874+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:11:53.689371+0300 INFO Added image to store: {'added': True, 'store_id': 1, 'image_id': 5}
+2024-04-07T04:12:25.989280+0300 INFO shutting down
+2024-04-07T04:12:28.761054+0300 INFO initialized db
+2024-04-07T04:12:29.064635+0300 INFO initialized db
+2024-04-07T04:12:29.086147+0300 DEBUG connected to clikchouselocalhost
+2024-04-07T04:12:29.089394+0300 DEBUG table new_table created or exists already!
+2024-04-07T04:12:30.779804+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:12:30.781746+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:12:30.823135+0300 INFO Added image to store: {'added': True, 'store_id': 1, 'image_id': 6}
+2024-04-07T04:12:34.559532+0300 INFO Getting current user from token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImV4cCI6MTcxMzA1NjMzOX0.dTkReUO6Vrcyy3bVcbMRQR74IjWcYukdkNR9td7alR4
+2024-04-07T04:12:34.560664+0300 INFO {'email': 'admin@admin.com', 'exp': 1713056339}
+2024-04-07T04:12:59.074135+0300 INFO shutting down

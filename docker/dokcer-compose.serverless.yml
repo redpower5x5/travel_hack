@@ -1,3 +1,4 @@
+name: traveel_image_upload
 services:
   nuclio:
     container_name: nuclio
@@ -18,8 +19,8 @@ services:
         max-size: 100m
         max-file: "3"
 
-  # backend:
-  #   environment:
-  #     ENABLE_SERVERLESS: 1
-  #   extra_hosts:
-  #     - "host.docker.internal:host-gateway"
+  backend:
+    environment:
+      ENABLE_SERVERLESS: 1
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

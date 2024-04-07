@@ -2,27 +2,29 @@ name: traveel_image_upload
 networks:
   russpass:
 services:
-  # backend:
-  #   build:
-  #     context: ../back
-  #     dockerfile: Dockerfile
-  #   restart: unless-stopped
-  #   env_file:
-  #     - .env
-  #   # volumes:
-  #   #   - "logs:/data"
-  #   # ports:
-  #   #   - "3233:3333"
-  #   depends_on:
-  #     - db
-  #     - redis
-  #   labels:
-  #     - "traefik.enable=true"
-  #     - "traefik.http.services.${SERVICE_NAME}.loadbalancer.server.port=3333"
-  #     - "traefik.http.routers.${SERVICE_NAME}.tls.certresolver=le"
-  #     - "traefik.http.routers.${SERVICE_NAME}.rule=Host(`photobank-api.onixx.ru`)"
-  #     - "traefik.http.routers.${SERVICE_NAME}.entrypoints=websecure"
-  #     - "traefik.http.routers.${SERVICE_NAME}.tls=true"
+  backend:
+    build:
+      context: ../back
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file:
+      - .env
+    # volumes:
+    #   - "logs:/data"
+    networks:
+      - russpass
+    ports:
+      - "3233:3333"
+    depends_on:
+      - db
+      - redis
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.${SERVICE_NAME}.loadbalancer.server.port=3333"
+      - "traefik.http.routers.${SERVICE_NAME}.tls.certresolver=le"
+      - "traefik.http.routers.${SERVICE_NAME}.rule=Host(`photobank-api.onixx.ru`)"
+      - "traefik.http.routers.${SERVICE_NAME}.entrypoints=websecure"
+      - "traefik.http.routers.${SERVICE_NAME}.tls=true"
 
   imgproxy:
     image: darthsim/imgproxy:latest
@@ -40,14 +42,51 @@ services:
       - IMGPROXY_USE_S3=true
     links:
       - minio
-  # redis:
-  #   image: redislabs/redismod
-  #   ports:
-  #     - "6744:6379"
-  #   networks:
-  #     - russpass
-  #   volumes:
-  #     - $PWD/data:/data
+  redis:
+    image: redislabs/redismod
+    ports:
+      - "6744:6379"
+    networks:
+      - russpass
+    volumes:
+      - $PWD/data:/data
+  clickhouse:
+    image: clickhouse/clickhouse-server
+    environment:
+      # Default user and database will be created using `init-defaults.sh` script
+      - CLICKHOUSE_DB=${CLICKHOUSE_DB}
+      - CLICKHOUSE_USER=${CLICKHOUSE_USER}
+      - CLICKHOUSE_PASSWORD=${CLICKHOUSE_PASSWORD}
+      - CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1
+    networks:
+      - russpass
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 262144
+        hard: 262144
+    volumes:
+      - clickhouse-data:/var/lib/clickhouse:cached
+      # - ./clickhouse/init-defaults.sh:/docker-entrypoint-initdb.d/init-defaults.sh:ro
+    ports:
+      - 9090:9000
+      - 8123:8123
+  db:
+    image: postgres:15
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    ports:
+      - "5667:5432"
+    networks:
+      - russpass
+    healthcheck:
+      test: ["CMD-SHELL", "sh -c 'pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}'"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
   minio:
     image: minio/minio
     command: server /data --console-address ":9001"
@@ -69,6 +108,15 @@ services:
       retries: 3
     volumes:
       - data:/data
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.services.${SERVICE_S3}.loadbalancer.server.port=9000"
+      - "traefik.http.routers.${SERVICE_S3}.tls.certresolver=le"
+      - "traefik.http.routers.${SERVICE_S3}.rule=Host(`s3.onixx.ru`)"
+      - "traefik.http.routers.${SERVICE_S3}.entrypoints=websecure"
+      - "traefik.http.routers.${SERVICE_S3}.tls=true"
 
 volumes:
   data:
+  clickhouse-data:
+  pg_data:

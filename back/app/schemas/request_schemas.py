@@ -11,7 +11,6 @@ class UserCreate(BaseModel):
     email: EmailStr
     password: str
     username: str
-    phone: str
 
 
 class UserLogin(BaseModel):
@@ -30,5 +29,31 @@ class UserUpdate(BaseModel):
     email: Optional[EmailStr]
     password: Optional[str]
     username: Optional[str]
-    phone: Optional[str]
 
+class UploadImage(BaseModel):
+    """
+    Image upload schema
+    """
+
+    description: Optional[str]
+    metainfo: Optional[dict]
+    tags: List[str]
+
+class ImageCreate(BaseModel):
+    """
+    Image create schema
+    """
+
+    original_file_path: str
+    thumbnail_file_path: str
+    description: Optional[str]
+    exif: dict
+    metainfo: Optional[dict]
+    tags: List[str]
+
+class UserStoreCreate(BaseModel):
+    """
+    User store create schema
+    """
+
+    store_name: str

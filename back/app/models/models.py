@@ -12,7 +12,4 @@ class UserInDB(BaseModel):
     id: int
     email: EmailStr
     username: str
-    phone: str
     hashed_password: str
-    role: str
-    department: str | None

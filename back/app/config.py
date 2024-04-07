@@ -30,6 +30,12 @@ class Settings(BaseSettings):
     POSTGRES_PASSWORD: str
     POSTGRES_PORT: str
     POSTGRES_DB: str
+    CLICKHOUSE_DB: str
+    CLICKHOUSE_USER: str
+    CLICKHOUSE_PASSWORD: str
+    CLICKHOUSE_HOST: str
+    CLICKHOUSE_PORT: int
+    NUCLIO_API_URL: str = "http://localhost:32774"
     DATABASE_URI: Optional[PostgresDsn] = None
     MESSAGE_STREAM_DELAY: int = 1  # second
     MESSAGE_STREAM_RETRY_TIMEOUT: int = 15000  # milisecond
@@ -57,6 +63,7 @@ class Settings(BaseSettings):
         )
 
     ALGORITHM: str = "HS256"
+    SECRET_KEY: str
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 10080 #10080
     ALLOWED_FILE_TYPES: List[str] = ["image/jpeg", "image/png", "image/jpg", "image/gif", "image/webp"]
 

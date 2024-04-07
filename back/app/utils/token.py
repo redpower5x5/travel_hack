@@ -77,9 +77,6 @@ async def get_current_user(
         id=user.id,
         username=user.username,
         email=user.email,
-        phone=user.phone,
-        role=user.role,
-        department=user.department,
     )
     return user
 
