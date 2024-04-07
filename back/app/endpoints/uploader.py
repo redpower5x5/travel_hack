@@ -144,9 +144,12 @@ def upload_file(
                 suggested_tags=tags_similar
             )
         else:
-            image_similar = crud.get_image_by_id(session, int(most_sim[0][0]))
-            # get tags of similar image
-            tags_similar = crud.get_tags_of_image(session, image_similar.id)
+            if len(most_sim) > 0:
+                image_similar = crud.get_image_by_id(session, int(most_sim[0][0]))
+                # get tags of similar image
+                tags_similar = crud.get_tags_of_image(session, image_similar.id)
+            else:
+                tags_similar = response_schemas.TagList(count=0, tags=[])
             # return response
             return response_schemas.UploadResponse(
                 status="success",

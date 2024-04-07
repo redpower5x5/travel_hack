@@ -199,12 +199,20 @@ def get_images_by_ids(db: Session, image_ids: List[int]) -> response_schemas.Ima
             images=[],
         )
 
-def get_all_images(db: Session) -> response_schemas.ImageListResponse:
+def get_all_images(db: Session, on_page: int, page_num: int) -> response_schemas.ImageListResponse:
     try:
-        images = (
-            db.query(db_models.Image)
-            .all()
-        )
+        if on_page is not None and page_num is not None:
+            images = (
+                db.query(db_models.Image)
+                .limit(on_page)
+                .offset((page_num - 1) * on_page)
+                .all()
+            )
+        else:
+            images = (
+                db.query(db_models.Image)
+                .all()
+            )
         total_count = len(images)
         images_list = [response_schemas.Image.model_validate(image) for image in images]
         return response_schemas.ImageList(
